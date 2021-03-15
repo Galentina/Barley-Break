@@ -1,10 +1,17 @@
 .App {
   text-align: center;
+  color: #4A2C01;
+}
+h1, h2, h3{
+  color: #4A2C01;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+hr{
+  width: 40%;
+  margin: 50px auto 50px auto;
+  height: 2px;
+  background-image: linear-gradient(to right, white, #ae803a, white);
+  border: none;
 }
 
 @media (prefers-reduced-motion: no-preference) {
@@ -14,19 +21,84 @@
 }
 
 .App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+  /*min-height: 100vh;*/
   display: flex;
-  flex-direction: column;
   align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  font-size: calc(20px + 2vmin);
+  margin: 20px;
 }
 
-.App-link {
-  color: #61dafb;
+.buttons {
+  font-size: 16px;
+  border-radius: 5px;
+  background: #b8dffc;
+  border: 1px solid #72bef8;
+  padding: 10px;
+  margin: 15px;
+  outline: none;
+  color: #4a2c01;
+  font-weight: bold;
 }
+
+.buttons:hover {
+  background: #72bef8;
+  border: 1px solid #1b98fc;
+  color: white;
+  outline: none;
+  font-weight: bold;
+}
+
+.cub-16 {
+  width: 50px;
+  height: 50px;
+  border-radius: 0px;
+  border: 0;
+  color: white;
+  background: none;
+  outline: none;
+  opacity: 0;
+}
+
+.cub-button {
+  width: 50px;
+  height: 50px;
+  border-radius: 5px;
+  border: 1px solid #ae803a;
+  background: #faf0d7;
+  outline: none;
+}
+.cub-button-grab{
+  width: 50px;
+  height: 50px;
+  border-radius: 5px;
+  border: 1px solid #ae803a;
+  outline: none;
+  background: #faf0d7;
+}
+
+.cub-button-grab:hover{
+  box-shadow: 0px 0px 10px #ae803a inset;
+  outline: none;
+  background: #faf0d7;
+  cursor:grab;
+}
+
+.cub-button-grab:active{
+  box-shadow: 0px 0px 10px #ae803a inset;
+  outline: none;
+  background: #faf0d7;
+  cursor:grabbing;
+}
+.cubs{
+  width: 200px;
+  height: 200px;
+  display: flex;
+  flex-wrap: wrap;
+  margin: auto;
+  outline: none;
+}
+
 
 @keyframes App-logo-spin {
   from {
@@ -35,4 +107,20 @@
   to {
     transform: rotate(360deg);
   }
+}
+.modal {
+  border-radius: 5px;
+  border: 1px solid #ae803a;
+  background-color: #faf0d7;
+  padding: 30px;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen', 'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue', sans-serif;
+  font-style: italic;
+  font-size: 20px;
+  box-shadow: 0 0 20px #ae803a inset;
+  opacity: 0.93;
 }
