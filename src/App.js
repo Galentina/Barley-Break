@@ -87,7 +87,7 @@ function App() {
         {finish &&
         <div className="modal">
             <h2>Congratulation!</h2>
-            <h3>You have done it!<br/> Your score <span style={{color: "#1b98fc"}}>{steps}</span> steps!</h3>
+            <h3>You have done it!<br/> Your score is <span style={{color: "#1b98fc"}}>{steps}</span> steps!</h3>
             <h4>Do you want to play again?<br/> Click on the button!</h4>
             <button className='buttons' onClick={cubsRandom}>Start new game</button>
         </div>
