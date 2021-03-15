@@ -23,7 +23,6 @@ export default function CubsGame(props) {
         props.changePos(id, side);
     }
 
-
     return (
         <>
         <button className={(cub.num===16) ? 'cub-16' : (nearEmpty()) ? 'cub-button-grab': 'cub-button'}

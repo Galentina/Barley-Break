@@ -8,7 +8,7 @@ h1, h2, h3{
 
 hr{
   width: 40%;
-  margin: 50px auto 50px auto;
+  margin: 30px auto 30px auto;
   height: 2px;
   background-image: linear-gradient(to right, white, #ae803a, white);
   border: none;
@@ -50,8 +50,8 @@ hr{
 }
 
 .cub-16 {
-  width: 50px;
-  height: 50px;
+  width: 70px;
+  height: 70px;
   border-radius: 0px;
   border: 0;
   color: white;
@@ -61,24 +61,26 @@ hr{
 }
 
 .cub-button {
-  width: 50px;
-  height: 50px;
+  width: 70px;
+  height: 70px;
   border-radius: 5px;
   border: 1px solid #ae803a;
   background: #faf0d7;
   outline: none;
+  font-size: 20px;
 }
 .cub-button-grab{
-  width: 50px;
-  height: 50px;
+  width: 70px;
+  height: 70px;
   border-radius: 5px;
   border: 1px solid #ae803a;
   outline: none;
   background: #faf0d7;
+  font-size: 20px;
 }
 
 .cub-button-grab:hover{
-  box-shadow: 0px 0px 10px #ae803a inset;
+  box-shadow: 0px 0px 15px #ae803a inset;
   outline: none;
   background: #faf0d7;
   cursor:grab;
@@ -91,8 +93,8 @@ hr{
   cursor:grabbing;
 }
 .cubs{
-  width: 200px;
-  height: 200px;
+  width: 280px;
+  height: 280px;
   display: flex;
   flex-wrap: wrap;
   margin: auto;
